@@ -6,6 +6,6 @@ window.OPENSHIFT_CONSTANTS.APP_LAUNCHER_NAVIGATION = [{
 }, {
   title: "Manage Account",
   iconClass: "pficon pficon-user",
-  href: "http://www.bbc.com/news",
+  href: "http://example.com",
   tooltip: "Update email address or password."
 }];
