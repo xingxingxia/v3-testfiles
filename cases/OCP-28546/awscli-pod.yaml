@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: awscli
+  namespace: default
+spec:
+  serviceAccountName: my-serviceaccount
+  containers:
+  - name: awscli
+    image: docker.io/sjenning/awscli:latest
+    command:
+    - /bin/sh
+    - "-c"
+    - "echo 'this should be in the logs' && sleep 86400"
+  terminationGracePeriodSeconds: 0
+  restartPolicy: Never
+
